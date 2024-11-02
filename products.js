@@ -25,7 +25,7 @@ function renderizarPublicaciones(publicaciones) {
                 <strong>${publicacion.name}</strong>
                 <p>${publicacion.description}</p>
                 <button type="button" class="btn btn-warning" onclick="modificarProducto(${publicacion.id})">Modificar</button>
-                <button type="button" class="btn btn-danger" onclick="eliminarProducto(${publicacion.id})">Remove</button>
+                <button type="button" class="btn btn-danger" onclick="eliminarProducto(${publicacion.id})">Eliminar</button>
             </div>
         `;
     });
