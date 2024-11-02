@@ -13,104 +13,109 @@
     <link rel="stylesheet" class="js-glass-style" href="./css/glass.css" disabled>
 </head>
 
-<!-- Main Wrapper -->
-<div class="main-wrapper">
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-main d-flex justify-content-between align-items-center">
-                <div class="header-logo">
-                    <img src="./imgs/Logo.png" alt="Logo de PawPalandia" style="height: 70px;">
-                    <a href="#"><span>Paw</span>Palandia</a>
-                </div>
-                <button type="button" class="header-hamburger-btn js-header-menu-toggler">
-                    <span></span>
-                </button>
-                <div class="header-backdrop js-header-backdrop"></div>
-                <nav class="header-menu js-header-menu">
-                    <button type="button" class="header-close-btn js-header-menu-toggler">
-                        <i class="fas fa-times"></i>
+<body>
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-main d-flex justify-content-between align-items-center">
+                    <div class="header-logo">
+                        <img src="./imgs/Logo.png" alt="Logo de PawPalandia" style="height: 70px;">
+                        <a href="#"><span>Paw</span>Palandia</a>
+                    </div>
+                    <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+                        <span></span>
                     </button>
-                    <ul class="menu">
-                        <li class="menu-item"><a href="index.html">inicio</a></li>
-                        <li class="menu-item"><a href="#about-us">Sobre Nosotros</a></li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#" class="js-toggle-sub-menu">Productos y servicios <i
-                                    class="fas fa-chevron-down"></i></a>
-                            <ul class="sub-menu js-sub-menu">
-                                <li class="sub-menu-item"><a href="courses.html">Productos</a></li>
-                                <li class="sub-menu-item"><a href="course-details.html">Servicios</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#" class="js-toggle-sub-menu">Iniciar Sesión / Registrarse <i
-                                    class="fas fa-chevron-down"></i></a>
-                            <ul class="sub-menu js-sub-menu">
-                                <li class="sub-menu-item"><a href="log-in.html">Log In</a></li>
-                                <li class="sub-menu-item"><a href="sign-up.html">Sign Up</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item"><a href="contact.html">contacto</a></li>
-                    </ul>
+                    <div class="header-backdrop js-header-backdrop"></div>
+                    <nav class="header-menu js-header-menu">
+                        <button type="button" class="header-close-btn js-header-menu-toggler">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="index.html">inicio</a></li>
+                            <li class="menu-item"><a href="#about-us">Sobre Nosotros</a></li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">Productos y servicios <i
+                                        class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item"><a href="courses.html">Productos</a></li>
+                                    <li class="sub-menu-item"><a href="course-details.html">Servicios</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">Iniciar Sesión / Registrarse <i
+                                        class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item"><a href="log-in.html">Log In</a></li>
+                                    <li class="sub-menu-item"><a href="sign-up.html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="contact.html">contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- !Header -->
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-nav">
+            <div class="container">
+                <nav aria-label="bradcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Courses</li>
+                    </ol>
                 </nav>
             </div>
         </div>
-    </header>
-    <!-- !Header -->
+        <!-- !Breadcrumb -->
 
-    <!-- Breadcrumb -->
-    <div class="breadcrumb-nav">
-        <div class="container">
-            <nav aria-label="bradcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Courses</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- !Breadcrumb -->
-
-    <body>
         <div class="container my-5">
             <h2 id="title" class="text-center fs-1 fw-bold mb-5">Lista de productos</h2>
-            <button type="button" class="btn btn-success" onclick="agregarProducto">Add</button>
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-success mb-4" data-bs-toggle="modal"
+                    data-bs-target="#addProduct">Add</button>
+            </div>
             <div id="publicaciones-lista" class="list-group">
                 <!-- JavaScript will insert list items here -->
             </div>
         </div>
 
-        <!-- Modal añadir producto -->
 
+        <!-- Modal añadir producto -->
         <div class="modal" tabindex="-1" id="addProduct">
-            <div class="modal-dialog">
+            <div class="modal-dialog py-4">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">¿Deseas añadir un nuevo producto?</h5>
-                        <form id="newItemForm">
-                            <div class="form-group">
-                                <label for="newItemName">Nombre</label>
-                                <input type="text" class="form-control" id="newItemName">
-                                <label for="newItemImageUrl">Link de imagen</label>
-                                <input type="text" class="form-control" id="newItemImageUrl">
-                            </div>
-                            <div class="form-group">
-                                <label for="newItemDescription">Descripción</label>
-                                <textarea type="text" class="form-control" id="newItemDescription"></textarea>
-                            </div>
-    
-                        </form>
                     </div>
-                    <div class="modal-body">
-                        <p>Se añadirá el producto ¿Deseas continuar?</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-danger" id="confirmAddBtn">Añadir</button>
-                    </div>
+                    <form class="m-auto">
+                        <div class="mb-3 mt-2">
+                            <label for="newItemName">Nombre</label>
+                            <input type="text" class="form-control" id="newItemName" required>
+                        </div>
+                        <div class="mb-3 mt-2">
+                            <label for="newItemImageUrl">Link de imagen</label>
+                            <input type="text" class="form-control" id="newItemImageUrl" required>
+                        </div>
+                        <div class="mb-3 mt-2">
+                            <label for="newItemDescription">Descripción</label>
+                            <textarea type="text" class="form-control" id="newItemDescription" required></textarea>
+                        </div>
+                        <div class="modal-body">
+                            <p>Se añadirá el producto ¿Deseas continuar?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-danger" id="confirmAddBtn">Añadir</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+
 
         <!-- Modal eliminar producto -->
         <div class="modal" tabindex="-1" id="removeProduct">
@@ -133,6 +138,34 @@
 
         <!-- Modal eliminar producto -->
 
+        <!-- Modal modificar producto -->
+        <div class="modal" tabindex="-1" id="modifyProduct">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">¿Qué campos del producto deseas modificar?</h5>
+                        <select class="form-select" id="fieldSelect" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="title">Título</option>
+                            <option value="image">Imagen</option>
+                            <option value="description">Descripción</option>
+                        </select>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Se modificará el producto seleccionado. ¿Deseas continuar?</p>
+                        <div id="dynamicInput"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-danger" id="confirmModifyBtn">Modificar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal modificar producto -->
 
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -231,48 +264,48 @@
             </div>
         </footer>
         <!-- !Footer -->
-</div>
-<!-- !Main Wrapper -->
-
-<!-- Style Switcher -->
-<div class="style-switcher js-style-switcher">
-    <div class="style-switcher-toggler js-style-switcher-toggler">
-        <i class="fas fa-cog"></i>
     </div>
-    <h3>Style Switcher</h3>
-    <div class="style-switcher-item">
-        <p class="mb-2">Theme Colors</p>
-        <!-- Theme Colors -->
-        <div class="theme-colors js-theme-colors">
-            <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
-            <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
-            <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
-            <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
-            <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+    <!-- !Main Wrapper -->
+
+    <!-- Style Switcher -->
+    <div class="style-switcher js-style-switcher">
+        <div class="style-switcher-toggler js-style-switcher-toggler">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3>Style Switcher</h3>
+        <div class="style-switcher-item">
+            <p class="mb-2">Theme Colors</p>
+            <!-- Theme Colors -->
+            <div class="theme-colors js-theme-colors">
+                <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
+                <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+                <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+                <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+                <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+            </div>
+        </div>
+        <div class="style-switcher-item">
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input js-dark-mode" role="switch" id="dark-mode">
+                <label for="dark-mode" class="form-check-label">Dark Mode</label>
+            </div>
+        </div>
+        <div class="style-switcher-item">
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input js-glass-effect" role="switch" id="glass-effect">
+                <label for="glass-effect" class="form-check-label">Glass Effect</label>
+            </div>
         </div>
     </div>
-    <div class="style-switcher-item">
-        <div class="form-check form-switch">
-            <input type="checkbox" class="form-check-input js-dark-mode" role="switch" id="dark-mode">
-            <label for="dark-mode" class="form-check-label">Dark Mode</label>
-        </div>
-    </div>
-    <div class="style-switcher-item">
-        <div class="form-check form-switch">
-            <input type="checkbox" class="form-check-input js-glass-effect" role="switch" id="glass-effect">
-            <label for="glass-effect" class="form-check-label">Glass Effect</label>
-        </div>
-    </div>
-</div>
-<!-- !Style Switcher -->
+    <!-- !Style Switcher -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
-<!-- Link to JavaScript file -->
-<script src="/products.js"></script>
+    <!-- Link to JavaScript file -->
+    <script src="/products.js"></script>
 </body>
 
 </html>

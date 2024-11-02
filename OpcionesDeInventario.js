@@ -7,7 +7,7 @@ class OpcionesInventario {
     }
 
     // Create the addItem method
-    agregarProducto(name, description,imageUrl) {
+    agregarProducto(name, description, imageUrl) {
         const producto = {
             // Increment the currentId property
             name: name,
@@ -20,3 +20,6 @@ class OpcionesInventario {
         this.items.push(producto);
     }
 }
+
+
+
