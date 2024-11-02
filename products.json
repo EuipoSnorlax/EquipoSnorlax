@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Dog Chow Adulto 10kg",
+    "img": "https://purina.com.mx/sites/default/files/styles/simple_card/public/2023-10/450x450_DC_Bulto_Extralife_Adultos_TodoslosTaman%CC%83os.png.webp?itok=4aTbPvCi",
+    "description": "Promueve la saciedad. Rico en fibras naturales. Ayuda a mantenerlo sano y en forma. Equilibra la flora intestinal. Prebiótico natural. Promueve un pelaje brillante. Omegas 6 y 3. Ayuda a mantener sus dientes limpios para una salud oral. Número de Autorización: A-0006-369",
+    "id":1
+  },
+  {
+    "name": "Kit de 20 Juguetes para Gato, Incluye Túnel de 120cm, Palo Guía, Pelotas, Ratones y Mas",
+    "img": "https://m.media-amazon.com/images/I/71bzwVrMjwL._AC_SL1200.jpg",
+    "description": "El kit Raganet para gato incluye 20 juguetes variados, perfectos para el entretenimiento y ejercicio de tu mascota. Contiene un túnel plegable de 120 cm, un palo guía con diseño de leopardo y pluma, además de pelotas, ratones y pompones en distintas texturas y tamaños. Fabricado con materiales seguros y duraderos como poliéster y cuerda, es ideal para mantener a tu gato activo y estimulado.",
+    "id":2
+  },
+  {
+    "name": "Multivitamin Dog-elthy 20 en 1",
+    "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSFmJIRzY9iNTUlP1S8IwpF5kiy-N03ZqBWI7EQmmqYGat4B1d-QaASXQm5JKoUQOwHW-9Wmbz5pZD44bY0G_tmEgqBgLhCaj6ogTR--0TyxUogM7seWvXQRA&usqp=CAE",
+    "description": "Suplemento Nutricional para Reforzar la Salud General de tu Perro Sabor Cerdo de 270g.",
+    "id":3
+  },
+  {
+    "name": "Fancy Pets Doggie Grass Grande Tapete de Entrenamiento para Perro",
+    "img": "https://m.media-amazon.com/images/I/51GtxgvWTTL._AC_SX466_.jpg",
+    "description": "El Doggie Grass permite entrenar al cachorro fácilmente dentro del hogar y es la solución perfecta para todo tipo de perros que no pueden salir frecuentemente. Recomendado para departamentos y casas sin jardín. Enseñar al perro a usar la alfombra sanitaria es muy sencillo, es recomendable hacerlo desde que es un cachorro.",
+    "id":4
+  },
+  {
+    "name": "Cat Chow Adulto 9kg",
+    "img": "https://purina.com.mx/sites/default/files/styles/card_450px/public/2022-11/hogare%C3%B1os_carne_cat_chow.jpg.webp?itok=b55_jIU6",
+    "description": "elaborado con una selección de ingredientes naturales sin colorantes ni sabores artificiales y mejorado con la inclusión de un prebiótico natural. Con PURINA® CAT CHOW®, construyes un escudo de protección alrededor de tu gato todos los días, mientras él disfruta de su delicioso sabor.",
+    "id":5
+  },
+  {
+    "name": "Túnel Felino 'Mundo de Bigotes'",
+    "img": "https://images.unsplash.com/photo-1560787139-2a25c43ff262?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Este acogedor túnel para gatos, con un sonido crujiente, está diseñado para brindar diversión máxima a tu felino. Con varias capas de tela suave, cada entrada está forrada con un material perfecto para rascar y satisfacer su instinto natural de arañar. El túnel tiene tres secciones conectadas, cada una con un ratón de peluche o pluma colgante, ideal para golpear y perseguir. Un pequeño bolsillo oculto en una de las secciones incluye una pizca de catnip para un toque extra de emoción.",
+    "id":6
+  },
+  {
+    "name": "Casa para perro (Exteriores)",
+    "img": "https://www.petco.com.mx/medias/104287.jpg-300ftw?context=bWFzdGVyfHJvb3R8NzIzOTl8aW1hZ2UvanBlZ3xoMzEvaGYzLzk4NTg2MDIxMzk2NzgvMTA0Mjg3LmpwZ18zMDBmdHd8NjgzNDhkN2MyMTc1MTRmZjY1YzJlMjk1MWZiMjBlZTA0ODU2NDlmYTZlNjI5OTNjZWMyMTA4MTM2MGMyNWU2NA",
+    "description": "La casa para exterior Extreme Outback es el refugio perfecto al aire libre para tu perro. Construido con madera maciza y herrajes de acero inoxidable lo hacen extremadamente resistente. Con forma de cabaña tradicional, sus patas nivelables y resistentes a la intemperie.",
+    "id":7
+  },
+  {
+    "name": "Cama para perro",
+    "img": "https://cdn1.coppel.com/images/catalog/mkp/2055/3000/20551245-1.jpg",
+    "description": "Su borde elevado reduce la ansiedad de tu peludo, mientras que su relleno de Memory Foam le da soporte a sus articulaciones, brindándole un descanso cómodo y reparador.",
+    "id":8
+  },
+  {
+    "name": "Placa de perro personalizada",
+    "img": "https://chikiguau.com/cdn/shop/products/3.7cm_9_fa5180d7-5a36-47bb-af2e-85cea873b50f.png?v=1653493208&width=1445",
+    "description": "Placa para perro, diseñada para combinar estilo y funcionalidad. Fabricada en acero inoxidable de alta calidad, esta placa es resistente a la corrosión y al desgaste, asegurando que mantenga su brillo y apariencia a lo largo del tiempo.",
+    "id":9
+  },
+  {
+    "name": "Kool Pets Carriola para mascotas",
+    "img": "https://m.media-amazon.com/images/I/71hkpUb3KBL._AC_SX425_.jpg",
+    "description": "Carriola para mascotas con tela de excelente calidad. Estructura hecha de plástico y acero de alta durabilidad. Llantas de plástico de alta calidad. Recomendable para mascotas con un peso de hasta 10kg.",
+    "id":10
+  }
+]

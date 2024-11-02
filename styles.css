@@ -1169,3 +1169,12 @@ textarea.form-control {
         left: 0;
     }
 }
+
+/* ---------------
+27. Lista items
+----------------- */
+
+#title{
+    font-weight: bolder;
+    background-color: rgba(136, 223, 238, 0.445);
+}
