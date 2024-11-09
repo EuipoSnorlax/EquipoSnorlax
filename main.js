@@ -1,5 +1,6 @@
 //
 
+
 window.addEventListener("load", () => {
     /* ----------------------------------------
             Page Loader
@@ -134,6 +135,91 @@ function sendEmail() {
     // Clear the form after sending... Allons-y !!!
     document.getElementById('contactForm').reset();
 }
+
+
+
+/* ----------------------------------------
+            New User Validation T-9
+------------------------------------------- */
+
+
+if (document.body.classList.contains('registration-page')) {
+    document.getElementById('productRegistrationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting the default way
+    
+        // Validate the input fields
+        if (validateNewUser()) {
+            // Send the email if validation passes
+            alertMessage= "🐈🐕--Te has Registrado Correctamente --🐈🐕";
+            showAlertAccount("success", alertMessage);
+            const registro = new SignUpUser();
+            registro.agregarUsuario(document.getElementById('registerName').value, document.getElementById('registerMidleName').value, document.getElementById('registerLastName').value, document.querySelector('input.registerBirthDay').value, document.getElementById('registerPhone').value, document.querySelector('input.emailUser').value, document.getElementById('registerPassword').value);
+            //console.log(registro.items);
+            const userObjectJSON = JSON.stringify(registro.items);
+            console.log(userObjectJSON);
+        }
+    });
+}
+
+function validateNewUser() {
+    const name = document.getElementById('registerName').value;
+    const email = document.querySelector('input.emailUser').value;
+    const telephone = document.getElementById('registerPhone').value;
+    const password = document.getElementById('registerPassword').value;
+    const ageUser = document.querySelector('input.registerBirthDay').value;
+    //const message = document.getElementById('message').value;
+    const errorMessage = document.getElementById('errorMessage');
+    
+    errorMessage.innerHTML = ''; // Clear previous error messages
+
+    // Validation checks
+    const isNameValid = name ? true : (errorMessage.innerHTML += 'Se requiere un nombre.<br>', false);
+    //const isEmailValid = validateEmail(email) ? true : (errorMessage.innerHTML += 'Formato de email no válido.<br>', false);
+    const isEmailValid = validateEmail(email) ? true : (showAlertErroOne("danger", "Formato de email no válido"), false);
+    //const isTelephoneValid = validateTelephone(telephone) ? true : (errorMessage.innerHTML += 'Formato de teléfono no válido.<br>', false);
+    const isTelephoneValid = validateTelephone(telephone) ? true : (showAlertErroOne("danger", "Formato de teléfono no válido"), false);
+    //const isPasswordValid = validatePassword(password) ? true : (errorMessage.innerHTML += 'La contraseña debe tener al menos 8 caracteres.<br>', false);
+    const isPasswordValid = validatePassword(password) ? true : (showAlertErroOne("danger", "La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un caracter no alfanumérico."), false);
+    //const isMessageValid = message ? true : (errorMessage.innerHTML += 'Se requiere un mensaje.<br>', false);
+    const isAgeValid = validateEdad(ageUser) ? true : (showAlertErroOne("danger", "Tienes que ser mayor de edad para poderte registrar"), false);
+
+    return isNameValid && isEmailValid && isTelephoneValid && isPasswordValid && isAgeValid; // All validations passed
+}
+
+function validatePassword(password) {
+    const password1 = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;
+    return password1.test(password);
+}
+
+
+function validateEmail(email) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+}
+
+function validateEdad(edad1){
+ const hoy = new Date();
+ const nacimiento = new Date(edad1);
+ let edad = hoy.getFullYear() - nacimiento.getFullYear();
+ const mes = hoy.getMonth() - nacimiento.getMonth();
+ if (mes < 0 || (mes === 0 && hoy.getDate() < nacimiento.getDate())) {
+     edad--;
+ }
+ return edad >= 18;
+}
+
+function showAlertAccount(type,message) {
+    const alert1 = document.getElementById("alertContainer");
+    alertContainer.innerHTML = `<div class="alert alert-${type} alert-dismissible fade show" role="alert">
+
+        ${message}
+
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+    </div>`;
+
+}
+
 
 
 
@@ -326,27 +412,101 @@ function themeGlassEffect() {
 themeGlassEffect();
 
 /* ----------------------------------------
+            User SignUp Form
+------------------------------------------- */
+
+function userSignUpForm() {
+    const userObject = {
+        code: '',
+        name: '',
+        description: '',
+        image: '',
+        price: '',
+        priceVIP: '',
+        department: '',
+        inventoryCheck: '',
+        amount: '',
+        amountMin: '',
+    };
+
+    const productForm = document.querySelector("#productRegistrationForm");
+    const code = document.querySelector("#productCode");
+    const name = document.querySelector("#productImage");
+    const description = document.querySelector("#productDescription");
+    const image = document.querySelector("#productImage");
+    const price = document.querySelector("#productPrice");
+    const priceVIP = document.querySelector("#productPriceVIP");
+    const department = document.querySelector("#productDepartment");
+    const inventoryCheck = document.querySelector("#productInventoryCheck");
+    const amount = document.querySelector("#productAmount");
+    const amountMin = document.querySelector("#productMin");
+    
+    productForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        productObject.code = code.value;
+        productObject.name = name.value;
+        productObject.description = description.value;
+        productObject.image = image.value;
+        productObject.price = price.value;
+        productObject.priceVIP = priceVIP.value;
+        productObject.department = department.value;
+        productObject.inventoryCheck = inventoryCheck.value;
+        productObject.amount = amount.value;
+        productObject.amountMin = amountMin.value;
+
+        
+        const productObjectJSON = JSON.stringify(productObject);
+        console.log(productObjectJSON);
+    }); 
+}
+productRegistrationForm();
+
+
+
+
+/* ----------------------------------------
             Product Registration Form
 ------------------------------------------- */
 
 function productRegistrationForm() {
     const productObject = {
+        code: '',
         name: '',
-        imageUrl: '',
-        description: ''
-        
+        description: '',
+        image: '',
+        price: '',
+        priceVIP: '',
+        department: '',
+        inventoryCheck: '',
+        amount: '',
+        amountMin: '',
     };
 
     const productForm = document.querySelector("#productRegistrationForm");
-    const name = document.querySelector("#productName");
-    const image = document.querySelector("#productImage");
+    const code = document.querySelector("#productCode");
+    const name = document.querySelector("#productImage");
     const description = document.querySelector("#productDescription");
+    const image = document.querySelector("#productImage");
+    const price = document.querySelector("#productPrice");
+    const priceVIP = document.querySelector("#productPriceVIP");
+    const department = document.querySelector("#productDepartment");
+    const inventoryCheck = document.querySelector("#productInventoryCheck");
+    const amount = document.querySelector("#productAmount");
+    const amountMin = document.querySelector("#productMin");
     
     productForm.addEventListener("submit", (event) => {
         event.preventDefault();
+        productObject.code = code.value;
         productObject.name = name.value;
         productObject.description = description.value;
-        productObject.imageUrl = image.value;
+        productObject.image = image.value;
+        productObject.price = price.value;
+        productObject.priceVIP = priceVIP.value;
+        productObject.department = department.value;
+        productObject.inventoryCheck = inventoryCheck.value;
+        productObject.amount = amount.value;
+        productObject.amountMin = amountMin.value;
+
         
         const productObjectJSON = JSON.stringify(productObject);
         console.log(productObjectJSON);

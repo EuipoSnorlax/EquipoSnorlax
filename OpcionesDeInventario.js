@@ -7,15 +7,22 @@ class OpcionesInventario {
     }
 
     // Create the addItem method
-    agregarProducto(name, description, imageUrl) {
+    agregarProducto(name, description, image) {
         const producto = {
             // Increment the currentId property
+            code: code,
             name: name,
-            img: imageUrl,
             description: description,
-            id: this.currentId++
+            image: image,
+            price: price,
+            priceVIP: priceVIP,
+            department: department,
+            inventoryCheck: inventoryCheck,
+            amount: amount,
+            amountMin: amountMin,
+            id: this.currentId++  
         };
-
+        
         // Push the item to the items property
         this.items.push(producto);
     }

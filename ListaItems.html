@@ -70,30 +70,19 @@
         </header>
         <!-- !Header -->
 
-        <!-- Breadcrumb -->
-        <div class="breadcrumb-nav">
-            <div class="container">
-                <nav aria-label="bradcrumb">
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Lista de Productos</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-        <!-- !Breadcrumb -->
-
-        <div class="container my-5">
-            <h2 id="title" class="text-center mb-5">Lista de productos</h2>
-            <div class="d-flex justify-content-end">
-                <button type="button" class="btn btn-theme mb-4" data-bs-toggle="modal"
-                    data-bs-target="#addProduct">Añadir producto</button>
+        <div class="container my-3">
+            <h2 id="title" class="text-center fs-1 mb-3">Lista de productos</h2>
+            <div class="d-flex justify-content-center">
+                    <button onclick="window.location.href='/PawPalandia_AboutUs_Login/product-registration.html'" type="button" class="btn btn-theme mb-4"> Añadir producto</button>
+                    <button type="button" class="btn btn-theme mb-4" data-bs-toggle="modal"
+                    data-bs-target="#addProduct">Modificar producto</button>
+                    <button type="button" class="btn btn-theme mb-4" data-bs-toggle="modal"
+                    data-bs-target="#addProduct">Eliminar producto</button>
             </div>
             <div id="publicaciones-lista" class="list-group">
                 <!-- JavaScript will insert list items here -->
             </div>
         </div>
-
 
         <!-- Modal añadir producto -->
         <div class="modal" tabindex="-1" id="addProduct">
@@ -149,7 +138,7 @@
 
         <!-- Modal eliminar producto -->
 
-        <!-- Modal modificar producto -->
+               <!-- Modal modificar producto -->
         <div class="modal" tabindex="-1" id="modifyProduct">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -157,9 +146,14 @@
                         <h5 class="modal-title">¿Qué campos del producto deseas modificar?</h5>
                         <select class="form-select" id="fieldSelect" aria-label="Default select example">
                             <option selected>Open this select menu</option>
-                            <option value="title">Título</option>
-                            <option value="image">Imagen</option>
-                            <option value="description">Descripción</option>
+                            <option value="productCode">Código de Barras</option>
+                            <option value="productName">Nombre</option>
+                            <option value="productDescription">Descripción</option>
+                            <option value="productImage">Imagen</option>
+                            <option value="productPrice">Precio Venta</option>
+                            <option value="productPriceVIP">Precio Club Pawpal</option>
+                            <option value="productDepartment">Departamento</option>
+                            <option value="productInventory">Inventario</option>
                         </select>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>

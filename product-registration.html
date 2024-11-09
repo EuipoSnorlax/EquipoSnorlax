@@ -71,20 +71,7 @@
         </header>
         <!-- !Header -->
 
-        <!-- Breadcrumb -->
-        <div class="breadcrumb-nav">
-            <div class="container">
-                <nav aria-label="bradcrumb">
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Registro de producto</li>
-                    </ol>
-                </nav>
-            </div>
-         </div>
-        <!-- !Breadcrumb -->
-
-        <!-- Contact Section -->
+         <!-- Contact Section -->
          <section class="contact-section section-padding">
             <!-- Bubble Animation -->
             <div class="bubble-animation">
@@ -99,6 +86,7 @@
                 <div class="bubble-animation-item"></div>
              </div>
             <!-- !Bubble Animation -->
+             
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
@@ -107,15 +95,34 @@
                             <div id="errorMessage" style="color: crimson;"></div>
                             <form action="#" id="productRegistrationForm">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="productName" placeholder="Nombre de producto" required>
+                                    <input type="text" class="form-control" id="productCode" placeholder="Código de Barras" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="productImage" placeholder="Imagen" required>
+                                    <input type="text" class="form-control" id="productName" placeholder="Nombre del producto" required>
                                 </div>
                                 <div class="form-group">
                                     <textarea class="form-control" id="productDescription" placeholder="Descripción" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-block btn-theme btn-form">Enviar</button>
+                                <div class="form-group">
+                                    <input type="url" class="form-control" id="productImage" placeholder="URL de la imagen (o subir archivo)">
+                                    <input type="file" class="form-control" id="productImage" placeholder="Archivo de la imagen">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="productPrice" placeholder="Precio Venta" required>
+                                    <input type="number" class="form-control" id="productPriceVIP" placeholder="Precio Club PawPal" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="productDepartment" placeholder="Departamento">
+                                </div>
+                                <div class="form-group">
+                                    <p style="text-align: center; font-weight: 400;" ><strong>Inventario</strong></p>
+                                    <p><input type="checkbox" id="productInventoryCheck"> Este producto SÍ utiliza inventario. </p> 
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="productAmount" placeholder="Cantidad Actual">
+                                    <input type="number" class="form-control" id="productMin" placeholder="Mínimo">
+                                </div>
+                                <button type="submit" class="btn btn-block btn-theme btn-form">Guardar Producto</button>
                             </form>
                         </div>
                     </div>

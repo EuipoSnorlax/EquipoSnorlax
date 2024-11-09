@@ -24,8 +24,8 @@ function renderizarPublicaciones(publicaciones) {
                 <img src="${publicacion.img}" alt="${publicacion.name}" style="width: 50px; height: 50px; object-fit: cover; margin-right: 10px;">
                 <strong>${publicacion.name}</strong>
                 <p>${publicacion.description}</p>
-                <button type="button" class="btn btn-warning" onclick="modificarProducto(${publicacion.id})">Modificar</button>
-                <button type="button" class="btn btn-danger" onclick="eliminarProducto(${publicacion.id})">Eliminar</button>
+                <button type="button" class="btn btn-theme" onclick="modificarProducto(${publicacion.id})">Modificar</button>
+                <button type="button" class="btn btn-theme" onclick="eliminarProducto(${publicacion.id})">Eliminar</button>
             </div>
         `;
     });
@@ -66,10 +66,10 @@ document.getElementById('fieldSelect').addEventListener('change', function() {
     dynamicInput.innerHTML = ''; 
 
 
-    if(selectValue === 'title') {
+    if(selectValue === 'code') {
         dynamicInput.innerHTML =
-        `<label for="newTitle">Nombre</label>
-         <input type="text" class="form-control" id="newTitle"  placeholder="Ingresa el nuevo título">`
+        `<label for="newCode">Código de Barras</label>
+         <input type="text" class="form-control" id="newCode"  placeholder="Ingresa el nuevo Código de Barras">`
         
     } else if(selectValue === 'image') {
         dynamicInput.innerHTML =

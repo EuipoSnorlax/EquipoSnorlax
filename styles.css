@@ -29,6 +29,8 @@
 25. BAI Section.
 26. "Course Details" Section.
 27. "Contact" Section.
+28. Lista items.
+29. "Sing-Up" Section.
 --------------------------------------------------------------------------------------- */
 
 
@@ -1171,10 +1173,18 @@ textarea.form-control {
 }
 
 /* ---------------
-27. Lista items
+28. Lista items.
 ----------------- */
 
 #title{
     font-weight: bolder;
-    background-color: rgba(136, 223, 238, 0.445);
+    /* background-color: #000000; */
+}
+
+/* ---------------
+29. Sing-Up section.
+----------------- */
+
+.form-group2{
+    display: flex;
 }
