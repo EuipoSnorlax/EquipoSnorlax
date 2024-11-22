@@ -31,6 +31,8 @@
 27. "Contact" Section.
 28. Lista items.
 29. "Sing-Up" Section.
+30. Blog Carrusel
+31. Cards
 --------------------------------------------------------------------------------------- */
 
 
@@ -1173,7 +1175,7 @@ textarea.form-control {
 }
 
 /* ---------------
-28. Lista items.
+28. Lista items
 ----------------- */
 
 #title{
@@ -1182,9 +1184,146 @@ textarea.form-control {
 }
 
 /* ---------------
-29. Sing-Up section.
+29. Sing-Up section
 ----------------- */
 
 .form-group2{
     display: flex;
+}
+/* --------------
+30. BLog Carrusel
+---------------- */
+/* Carrusel personalizado para e-commerce */
+.custom-carousel {
+    height: 450px; /* Altura ajustada */
+    overflow: hidden;
+    position: relative;
+    background-color: #f5f5f5; /* Fondo neutro para espacios vacíos */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+}
+
+/* Ajusta las imágenes para que sean responsivas */
+.custom-carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Asegura que las imágenes se adapten bien */
+    border-radius: 10px; /* Alinea con el contenedor */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de zoom suave en hover */
+.custom-carousel .carousel-item img:hover {
+    transform: scale(1.02); /* Pequeño zoom para un toque dinámico */
+}
+
+/* Estiliza los captions del carrusel */
+.custom-carousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Botones de control */
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+    filter: invert(100%); /* Cambia a blanco los íconos */
+    width: 35px;
+    height: 35px;
+}
+
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.custom-carousel .carousel-control-prev:hover,
+.custom-carousel .carousel-control-next:hover {
+    opacity: 1; /* Resalta los controles al pasar el mouse */
+}
+
+/* Indicadores del carrusel */
+.custom-carousel .carousel-indicators button {
+    background-color: #555; /* Color neutral */
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.custom-carousel .carousel-indicators .active {
+    background-color: #ff6600; /* Color destacado (puedes ajustarlo) */
+    opacity: 1;
+}
+
+
+/* --------------
+31. Cards
+---------------- */
+.servicio-card-wrapper{
+    padding: 10px 10%;
+}
+#servicio-card-area{
+    padding: 50px 0;
+}
+.servicio-card-box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+.servicio-card-box {
+	border-radius: 25px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.servicio-card-box img{
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+.servicio-card-overlay {
+	width: 100%;
+	height: 0;
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+.servicio-card-overlay h3 {
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 80%;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+.servicio-card-overlay a {
+	margin-top: 10px;
+	color: #262626;
+	text-decoration: none;
+	font-size: 14px;
+	background: #fff;
+	border-radius: 50px;
+	text-align: center;
+	padding: 5px 15px;
+}
+.servicio-card-box:hover img{
+    transform: scale(1.1);
+}
+.servicio-card-box:hover .overlay{
+    height: 40%;
 }
