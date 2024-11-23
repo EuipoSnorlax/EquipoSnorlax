@@ -31,8 +31,8 @@
 27. "Contact" Section.
 28. Lista items.
 29. "Sing-Up" Section.
-30. Blog Carrusel
-31. Cards
+30. Cards
+
 --------------------------------------------------------------------------------------- */
 
 
@@ -1190,78 +1190,10 @@ textarea.form-control {
 .form-group2{
     display: flex;
 }
-/* --------------
-30. BLog Carrusel
----------------- */
-/* Carrusel personalizado para e-commerce */
-.custom-carousel {
-    height: 450px; /* Altura ajustada */
-    overflow: hidden;
-    position: relative;
-    background-color: #f5f5f5; /* Fondo neutro para espacios vacíos */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra elegante */
-}
-
-/* Ajusta las imágenes para que sean responsivas */
-.custom-carousel .carousel-item img {
-    height: 100%;
-    object-fit: cover; /* Asegura que las imágenes se adapten bien */
-    border-radius: 10px; /* Alinea con el contenedor */
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Efecto de zoom suave en hover */
-.custom-carousel .carousel-item img:hover {
-    transform: scale(1.02); /* Pequeño zoom para un toque dinámico */
-}
-
-/* Estiliza los captions del carrusel */
-.custom-carousel .carousel-caption {
-    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-/* Botones de control */
-.custom-carousel .carousel-control-prev-icon,
-.custom-carousel .carousel-control-next-icon {
-    filter: invert(100%); /* Cambia a blanco los íconos */
-    width: 35px;
-    height: 35px;
-}
-
-.custom-carousel .carousel-control-prev,
-.custom-carousel .carousel-control-next {
-    opacity: 0.8;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.custom-carousel .carousel-control-prev:hover,
-.custom-carousel .carousel-control-next:hover {
-    opacity: 1; /* Resalta los controles al pasar el mouse */
-}
-
-/* Indicadores del carrusel */
-.custom-carousel .carousel-indicators button {
-    background-color: #555; /* Color neutral */
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    opacity: 0.7;
-    transition: opacity 0.3s;
-}
-
-.custom-carousel .carousel-indicators .active {
-    background-color: #ff6600; /* Color destacado (puedes ajustarlo) */
-    opacity: 1;
-}
 
 
 /* --------------
-31. Cards
+30. Cards
 ---------------- */
 .servicio-card-wrapper{
     padding: 10px 10%;
