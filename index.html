@@ -78,43 +78,6 @@
             </div>
         </header>
         <!-- !Header -->
-
-        <!-- Carousel Promociones-->
-        <section class="carousel">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/image_uno.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/image_dos.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/image_tres.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-        <!-- Carousel Promociones -->
-
         <!-- Banner -->
         <section class="banner-section d-flex align-items-center position-relative">
             <!-- Bubble Animation -->
@@ -155,125 +118,187 @@
             </div>
         </section>
         <!-- !Banner -->
+        <!-- Carousel Promociones-->
+        <section>
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/banner1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/banner2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/banner3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Carousel Promociones -->
         
+        <!-- Selector mascotas -->
+        <section>
+            <div class="container">
+                <div class="row mt-4">
+                    <h5>¿Para quien compraras hoy?</h5>
+                    <div class="col-sm-6">
+                        <a href="#">
+                            <img src="imgs/dog.jpg" class="img-fluid rounded" alt="...">
+                        </a>
+                        <p>Perrijos</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#">
+                            <img src="imgs/cat.jpg" class="img-fluid rounded" alt="...">
+                        </a>
+                        <p>Michijos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Selector mascotas -->
+
         <!-- Selector -->
-        <div id="selectionButtons"class="button mt-4">
-            <button id="perrosButton" class="btn btn-outline-secondary rounded-pill active" onclick=perros(); type="button">
-                Productos para perro
-            </button>
-            <button id="gatosButton" class="btn btn-outline-secondary rounded-pill" onclick=gatos(); type="button">
-                Productos para gato
-            </button>
-        </div>
-
-        <div id="perros" class="container-fluid mt-4" style="display: block;">
-            <div class="row"  >
-                <div class="col text-center">
-                    <a href="#">
-                        <img id="myImage" src="img/perros/alimento.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Alimento</p>
+        <section>
+            <div class="container">
+                <div id="selectionButtons"class="button mt-4">
+                    <button id="perrosButton" class="btn btn-outline-secondary rounded-pill active" onclick=perros(); type="button">
+                        Productos para perro
+                    </button>
+                    <button id="gatosButton" class="btn btn-outline-secondary rounded-pill" onclick=gatos(); type="button">
+                        Productos para gato
+                    </button>
                 </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/perros/premios.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Premios</p>
+    
+                <div id="perros" class="container-fluid mt-4" style="display: block;">
+                    <div class="row"  >
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/dog_food.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Alimento</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/dog_treats.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Premios</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/dog_toys.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Juguetes</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/dog_clothes.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Ropa</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#"> 
+                                <img src="imgs/dog_health.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Salud</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/dog_bed.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Camas</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/dog_clean.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Limpieza</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/continue.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Ver todo</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/perros/juguetes.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Juguetes</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/perros/ropa.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Ropa</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#"> 
-                        <img src="img/perros/salud.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Salud</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/perros/cama.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Camas</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/perros/limpieza.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Limpieza</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/perros/ver_todo.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Ver todo</p>
+    
+                <div id="gatos" class="container-fluid mt-4" style="display: none;">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/cat_food.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Alimento</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/cat_treats.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Premios</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/cat_toys.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Juguetes</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/cat_clothes.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Ropa</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/cat_health.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Salud</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/cat_bed.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Camas</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/cat_clean.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Limpieza</p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#">
+                                <img src="imgs/continue.png" height="100px" weight="100px" class="img rounded" alt="">
+                            </a>
+                            <p>Ver todo</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div id="gatos" class="container-fluid mt-4" style="display: none;">
-            <div class="row">
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/gatos/alimento.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Alimento</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/gatos/premios.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Premios</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/gatos/juguetes.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Juguetes</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/gatos/ropa.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Ropa</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/gatos/salud.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Salud</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/gatos/cama.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Camas</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/gatos/limpieza.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Limpieza</p>
-                </div>
-                <div class="col text-center">
-                    <a href="#">
-                        <img src="img/gatos/ver_todo.png" height="100px" weight="100px" class="img rounded" alt="">
-                    </a>
-                    <p>Ver todo</p>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
         <!-- !Selector -->
-
+        
       <!-- Carrusel Blog -->
 <div id="carouselExampleIndicators" class="carousel slide custom-carousel">
     <div class="carousel-indicators">
