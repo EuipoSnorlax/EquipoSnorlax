@@ -13,11 +13,11 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../responsive.css">
-    <link rel="stylesheet" class="js-color-style" href="../css/color-1.css">
-    <link rel="stylesheet" class="js-glass-style" href="../css/glass.css" disabled>
-    <link rel="stylesheet" href="./blog.css"
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="stylesheet" class="js-color-style" href="/css/color-1.css">
+    <link rel="stylesheet" class="js-glass-style" href="/css/glass.css" disabled>
+    <link rel="stylesheet" href="/Blog/posts/post.css"
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="header-main d-flex justify-content-between align-items-center">
                     <div class="header-logo">
-                        <img src="../imgs/Logo.png" alt="Logo de PawPalandia" style="height: 70px;">
+                        <img src="/imgs/Logo.png" alt="Logo de PawPalandia" style="height: 70px;">
                         <a href="#"><span>Paw</span>Palandia</a>
                     </div>
                     <button type="button" class="header-hamburger-btn js-header-menu-toggler">
@@ -47,26 +47,26 @@
                             <i class="fas fa-times"></i>
                         </button>
                         <ul class="menu">
-                            <li class="menu-item"><a href="../index.html">inicio</a></li>
-                            <li class="menu-item"><a href="../about-us.html">Sobre Nosotros</a></li>
+                            <li class="menu-item"><a href="/index.html">inicio</a></li>
+                            <li class="menu-item"><a href="/about-us.html">Sobre Nosotros</a></li>
                             <li class="menu-item menu-item-has-children">
                                 <a href="#" class="js-toggle-sub-menu">Productos y servicios <i
                                         class="fas fa-chevron-down"></i></a>
                                 <ul class="sub-menu js-sub-menu">
-                                    <li class="sub-menu-item"><a href="../courses.html">Productos</a></li>
-                                    <li class="sub-menu-item"><a href="../ListaItems.html">Lista de items</a></li>
-                                    <li class="sub-menu-item"><a href="../course-details.html">Servicios</a></li>
+                                    <li class="sub-menu-item"><a href="/courses.html">Productos</a></li>
+                                    <li class="sub-menu-item"><a href="/ListaItems.html">Lista de items</a></li>
+                                    <li class="sub-menu-item"><a href="/course-details.html">Servicios</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-has-children">
                                 <a href="#" class="js-toggle-sub-menu">Iniciar Sesión / Registrarse <i
                                         class="fas fa-chevron-down"></i></a>
                                 <ul class="sub-menu js-sub-menu">
-                                    <li class="sub-menu-item"><a href="../log-in.html">Log In</a></li>
-                                    <li class="sub-menu-item"><a href="../sign-up.html">Sign Up</a></li>
+                                    <li class="sub-menu-item"><a href="/log-in.html">Log In</a></li>
+                                    <li class="sub-menu-item"><a href="/sign-up.html">Sign Up</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-item"><a href="../contact.html">contacto</a></li>
+                            <li class="menu-item"><a href="/contact.html">contacto</a></li>
 
                             <!-- Search Bar? -->
                             <!-- TBF -->
@@ -79,48 +79,59 @@
             </div>
         </header>
         <!-- !Header -->
-         <!-- section-->
-         <main>
-          <section class="hero">
-            <h1>Nuestro Blog</h1>
-            <p>Descubre consejos, historias, y más sobre el cuidado de tus mascotas.</p>
-          </section>
-      
-          <section class="blog-carousel">
-            <div class="carousel">
-              <div class="card">
-                <img src="./imgs/juguetes.jpg" alt="Blog Post 1">
-                <h3>Los Mejores Juguetes para Mantener a Tu Perro Feliz y Activo</h3>
-                <p>Descubre cuáles son los juguetes más adecuados según su raza y tamaño.</p>
-                <a href="../Blog/posts/post1.html">Leer más</a>
-              </div>
-              <div class="card">
-                <img src="./imgs/alimentacion-gato.jpg" alt="Blog Post 2">
-                <h3>Alimentación Saludable para Gatos: Consejos y Productos Recomendados</h3>
-                <p>Guía completa sobre la dieta ideal para tu amigo felino.</p>
-                <a href="#">Leer más</a>
-              </div>
-              <div class="card">
-                <img src="./imgs/veterinario.jpg" alt="Blog Post 3">
-                <h3>Cómo Preparar a tu Mascota para su Primera Visita al Veterinario</h3>
-                <p>Consejos y trucos para que la primera visita al veterinario sea menos estresante para tu mascota.</p>
-                <a href="#">Leer más</a>
-                </div>
-                <div class="card">
-                  <img src="./imgs/DIY.jpg" alt="Blog Post 3">
-                  <h3>Cómo Hacer Camas y Juguetes Caseros para Tus Mascotas.</h3>
-                  <p>Instrucciones paso a paso para crear camas y juguetes personalizados para tus mascotas</p>
-                  <a href="#">Leer más</a>
-                </div>
-                  <div class="card">
-                    <img src="./imgs/shower.jpg" alt="Blog Post 3">
-                    <h3>Consejos para la Higiene de Mascotas en el Hogar</h3>
-                    <p>Guía para mantener a tu mascota limpia y saludable con productos caseros.</p>
-                    <a href="#">Leer más</a>
-              </div>
-            </div>
-          </section>
-        </main>
+         <!-- Post --> 
+         <main class="blog-post">
+            <section class="post-hero">
+              <img src="/Blog/imgs/juguetes.jpg" alt="Perro entrenado">
+              <h1>Consejos para entrenar a tu perro</h1>
+            </section>
+        
+            <article>
+                <p>
+                  Mantener a tu perro entretenido y activo es esencial para su bienestar. Aquí te ofrecemos algunas recomendaciones sobre los mejores juguetes para tu amigo peludo:
+                </p>
+                <h2>1. Juguetes interactivos</h2>
+                <p>
+                  Los juguetes que dispensan golosinas son perfectos para estimular la mente de tu perro y mantenerlo ocupado. Busca rompecabezas que desafíen su ingenio y eviten el aburrimiento.
+                </p>
+                
+                <h2>2. Pelotas resistentes</h2>
+                <p>
+                  Asegúrate de elegir pelotas diseñadas específicamente para perros, hechas de materiales duraderos. Las pelotas con sonido pueden añadir una capa extra de diversión para tu mascota.
+                </p>
+                
+                <h2>3. Juguetes de cuerda</h2>
+                <p>
+                  Ideales para juegos de tirar y aflojar, estos juguetes también ayudan a mantener los dientes de tu perro limpios. Opta por cuerdas de algodón natural para evitar productos químicos dañinos.
+                </p>
+                
+                <h2>4. Juguetes de peluche</h2>
+                <p>
+                  Aunque no son tan duraderos, los juguetes de peluche pueden proporcionar comodidad y diversión. Supervisa a tu perro para evitar que ingiera materiales del interior.
+                </p>
+                
+                <h2>5. Juguetes acuáticos</h2>
+                <p>
+                  Si tu perro disfruta del agua, los juguetes flotantes son una excelente opción para jugar en la piscina o el lago. Elige materiales que se sequen rápidamente y resistan el moho.
+                </p>
+                
+                <h2>6. Juguetes de caucho</h2>
+                <p>
+                  Los juguetes de caucho sólido son excelentes para perros que les gusta masticar. Asegúrate de que el caucho sea de alta calidad y seguro para mascotas.
+                </p>
+              </article>
+              
+        
+            <a href="/Blog/blog.html" class="back-link">Volver al blog</a>
+          </main>
+
+
+
+
+
+         <!-- Post --> 
+
+         
 
 
 
@@ -247,8 +258,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="../main.js"></script>
-    <script src="../Blog/blog.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
